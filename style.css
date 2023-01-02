@@ -1,0 +1,142 @@
+:root{
+    --branco-principal:#ffffff;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul:#167BF7;
+    --cor-de-fundo:#00030C;
+    --fonte-principal:'Inter';
+    --botao-azul-efeito:#3d90f6;
+}
+
+body{
+    background-color:var(--cor-de-fundo);
+    color:var(--branco-principal);
+    font-family:var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.principal{
+    background-image: url(./img/Background.png);
+    background-repeat:  no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 680px;
+}
+
+.container__caixa{
+    margin: 125px 92px;
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight:700;
+}
+.container__imagem{
+    margin: 22px 0 54px 0;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding:16px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 16px;
+}
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+}
+
+
+.container__descricao{
+    padding:24px;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario__imagem{
+    width: 50%;
+}
+
+.secundario{
+    align-items: center;
+    padding: 100px 120px;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.descricao__conteudo{
+    font-size: 16px;
+    line-height: 150%;
+    color:var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.dispositivos{
+    padding: 150px 100px;
+}
+
+.dispositivos__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+   text-align: center;
+   font-size: 28px;
+   padding-top: 16px;
+   color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 120px 90px;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 160px 24px;
+    padding-top: 40px;
+    }
+
+.lista__link a{
+        text-decoration: none;
+        color: var(--branco-principal);
+        }
+
+.lista__link a:hover{
+    color:var(--botao-azul);
+
+}
+
+.rodape__texto{
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 16px 0;
+    line-height: 150%;
+}
+
